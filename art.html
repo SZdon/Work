@@ -1,0 +1,749 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Scott Zdon Art</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<style type="text/css">
+	
+	.Scrollys
+{
+    max-height: 660px;
+    overflow-y: scroll;
+}	
+
+
+root {
+  --gutter: 5px;
+}
+			
+
+			
+.hs {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns:
+    10px
+    repeat(15, calc(85% - 40px))
+    10px;
+  grid-template-rows: minmax(150px, 1fr);
+}
+.hs:before,
+.hs:after {
+  content: '';
+  width: 10px;
+}
+.image.art img {
+            justify-content: center;
+                 align-items: center;
+				object-fit: contain;
+                  cursor: pointer;
+  transition: 0.3s;
+                max-height: 400px;
+			}
+
+
+						.row {
+            justify-content: center;
+                 align-items: center;
+				object-fit: contain;
+			}
+   
+         
+            
+ #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+    max-height: 100vh;
+  background-color: white;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  max-width: 65vw;
+  max-height: 65vh;
+    align-content: center;
+    font-size: 16px;
+}
+            
+        
+ .mySlides img {
+  max-width: 70%; /* Ensures the image doesn't exceed the width of its parent */
+  height: auto;    /* Maintains the image's aspect ratio */
+ object-fit: contain; 
+     
+    align-content: center;
+}           
+            
+            /* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }  }        
+
+
+/* The Close Button */
+.close {
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: white;
+  padding: 2px 16px;
+  color: black;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+   .my-div {
+        width: 100vw;
+    }
+            
+
+	    </style>	
+		
+		
+		
+		
+		
+		
+		
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header class="style7 alt" id="header">
+						<a href="index.html" class="logo"><span>Scott Zdon</span></a>
+						<nav >
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+									<li><a href="index.html">Home</a></li>
+											<li><a href="web.html">Web</a></li>
+											<li><a href="photography.html">Photography</a></li>
+							                <li><a href="print.html">Print</a></li>
+                                            <li><a href="environmental.html">Environmental</a></li>
+											<li><a href="presentation.html">Presentation</a></li>
+                                            <li><a href="branding.html">Branding</a></li>
+                                            <li><a href="animation.html">Social Media</a></li>
+                                            <li><a href="art.html">Art</a></li>
+                                            <li><a href="index.html#bio">Bio</a></li>
+						</ul>
+						<ul class="actions stacked">
+	
+							<li><a href="#cta" class="button fit">Contact Me</a></li>
+						</ul>
+					</nav>
+
+                
+                
+                
+                
+				<!-- Main -->
+					<div id="main" class="alt">
+
+			
+						<!-- One -->
+							<section class="wrapper style5" id="one">
+	
+
+						
+
+	
+  			<div class="inner" id="64hd">
+                
+                								<div class="title">							
+										
+                                                    
+                               <p><h3>Art | Painting</h3> <a href="/printmaking.html" class="more scrolly">   Printmaking   |</a><a href="/mixed-media.html" class="more scrolly">   Mixed Media   |</a><a href="/photography.html" class="more scrolly">   Photography  </a></p>
+                                
+		</div>	
+<div class="row">
+    
+ 
+      <div class="col-9 col-12-small">
+        <div class="box alt"><span class="image fit"><img src="images/painting-12.jpg" width="100%" alt=""/></span>
+          <h4>Sillre, Sweden</h4>
+										<p>36" x 36" Oil on Canvas. A family piling hay on drying racks in Sillre. Photo reference: Carl Gustaf Rosenberg, 1935-1939.</p>						
+
+                                   
+                                           
+		</div>
+	  </div>  
+    </div>  
+	                            <hr />	                        
+
+
+		
+			      <header>
+										<h4>Norse Series</h4>
+                                      </header> <p>My current painting series explores my Norse identity through my Swedish and Norwegian family of immigrants. Using current and historical references of photography and Scandanavian painting.</p>
+        
+            
+            
+            
+<div class="row">
+    
+ 
+      <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-15.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></span>
+  </div> </div> 
+        
+       
+
+      <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-14.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"></span>
+  </div>  </div> 
+  
+   
+          <div class="col-4 col-12-small"><div class="box alt">
+              <span class="image art">
+    <img src="images/painting-4.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"></span>
+  </div> </div> 
+
+    <!--  row 2 -->  
+         <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-6.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"></span>
+  </div> </div> 
+        
+       
+
+      <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-10.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor"></span>
+  </div>  </div> 
+  
+   
+          <div class="col-4 col-12-small"><div class="box alt">
+              <span class="image art">
+    <img src="images/painting-9.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor"></span>
+  </div> </div>  
+    
+  <!--  row 3 -->    
+      <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-8.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor"></span>
+  </div> </div> 
+        
+       
+
+      <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-7.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor"></span>
+  </div>  </div> 
+  
+   
+          <div class="col-4 col-12-small"><div class="box alt">
+              <span class="image art">
+    <img src="images/painting-11.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor"></span>
+  </div> </div> 
+    
+    <!--  row 4 -->  
+          <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-2.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor"></span>
+  </div> </div> 
+        
+       
+
+      <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-13.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor"></span>
+  </div>  </div> 
+  
+   
+          <div class="col-4 col-12-small"><div class="box alt">
+              <span class="image art">
+    <img src="images/painting-3.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor"></span>
+  </div> </div> 
+    
+     <!--  row 5 -->  
+          <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-1.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor"></span>
+  </div> </div> 
+        
+      <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-18.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor"></span>
+  </div>  </div> 
+    
+      <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-16.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor"></span>
+  </div>  </div> 
+    
+     <!--  row 6 -->  
+    
+       <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-5.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor"></span>
+  </div>  </div> 
+    
+        <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-17.jpg" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor"></span>
+  </div>  </div> 
+    
+           <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-19.jpg" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor"></span>
+  </div>  </div> 
+    
+    
+    
+   
+    <div class="my-div ">
+   <hr />	<header>
+    <h4>Older work</h4></header><br></div>
+    
+    
+
+    
+    
+     <!--  row 7 -->  
+    
+       <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-26.jpg" style="width:100%" onclick="openModal();currentSlide(19)" class="hover-shadow cursor"></span>
+  </div>  </div> 
+    
+        <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-27.jpg" style="width:100%" onclick="openModal();currentSlide(20)" class="hover-shadow cursor"></span>
+  </div>  </div> 
+    
+           <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-31.jpg" style="width:100%" onclick="openModal();currentSlide(21)" class="hover-shadow cursor"></span>
+  </div>  </div> 
+        <!--  row 8 -->  
+    
+       <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-21.jpg" style="width:100%" onclick="openModal();currentSlide(22)" class="hover-shadow cursor"></span>
+  </div>  </div> 
+    
+        <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-22.jpg" style="width:100%" onclick="openModal();currentSlide(23)" class="hover-shadow cursor"></span>
+  </div>  </div> 
+    
+           <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-29.jpg" style="width:100%" onclick="openModal();currentSlide(24)" class="hover-shadow cursor"></span>
+  </div>  </div>  
+    
+         <!--  row 9 -->  
+    
+       <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-32.jpg" style="width:100%" onclick="openModal();currentSlide(25)" class="hover-shadow cursor"></span>
+  </div>  </div> 
+    
+        <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-30.jpg" style="width:100%" onclick="openModal();currentSlide(26)" class="hover-shadow cursor"></span>
+  </div>  </div>  
+    
+    
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+      
+
+    <div class="mySlides">
+    
+      <img src="images/painting-15.jpg" style="width:100%"><p><h3>Woman in a Setesdal costume at the stairs of a shop. Evje, Aust-Agder Fylke, Norway</h3> Oil on Canvas 36"x36". Reference: photograph by Elisabeth Meyer, 1940-1942.</p></div>
+
+
+    <div class="mySlides">
+ 
+      <img src="images/painting-14.jpg" style="width:100%"><p><h3>Parish Constable August Ländin, Kårsta, Uppland, Sweden</h3> Oil on Canvas 24"x30" Reference: photograph by Einar Erici 1930s.</p>
+    </div>
+
+    <div class="mySlides">
+   
+      <img src="images/painting-4.jpg" style="width:100%"><p><h3>Norway</h3>OIl on Canvas 24"x36".</p>
+    </div>
+    
+   <!--  row 2 -->  
+                
+      <div class="mySlides">
+     
+      <img src="images/painting-6.jpg" style="width:100%"><p><h3>Slussen, Stockholm, Sweden</h3> Reference: Photograph by: Carl Gustaf Rosenberg. 1935-1939.</p></div>
+
+
+    <div class="mySlides">
+ 
+      <img src="images/painting-10.jpg" style="width:100%"><p><h3>Freya the Norse Goddess</h3>Oil on Canvas 36"x36". Freya the Norse goddess of love, fetility, beauty, sex, war, and death.</p>
+    </div>
+
+    <div class="mySlides">
+   
+      <img src="images/painting-9.jpg" style="width:100%"><p><h3>Edvard Munch study</h3>Oil on Canvas 24"x24". Study of Edvard Munch's Fertility.</p>
+    </div>          
+                
+   <!--  row 3 -->                
+                
+        <div class="mySlides">
+     
+      <img src="images/painting-8.jpg" style="width:100%"><p><h3>My Norwegian Great Grandmother</h3>Oil on Canvas 16"x20". Immigrated from Bergen Norway.</p></div>
+
+
+    <div class="mySlides">
+ 
+      <img src="images/painting-7.jpg" style="width:100%"><p><h3>My Swedish Great Grandmother</h3>Oil on Canvas 16"x20". Immigrated from Stockholm Sweden.</p>
+    </div>
+
+    <div class="mySlides">
+   
+      <img src="images/painting-11.jpg" style="width:100%"><p><h3>My Norwegian Great Grandfather</h3>Oil on Canvas 16"x20". Immigrated from Bergen Norway.</p></p>
+    </div>            
+                
+   <!--  row 4 -->                
+                
+        <div class="mySlides">
+     
+      <img src="images/painting-2.jpg" style="width:100%"><p><h3>Bergen Norway</h3>Oil on Canvas 24"x30".</p></div>
+
+
+    <div class="mySlides">
+ 
+      <img src="images/painting-13.jpg" style="width:100%"><p><h3>Borgberget hillfort, Segersta, Hälsingland, Sweden</h3>Oil on Canvas 24"x36" Reference: Photograph Gustaf Hallström, 1912.</p>
+    </div>
+
+    <div class="mySlides">
+   
+      <img src="images/painting-3.jpg" style="width:100%"><p><h3>Oslo Norway</h3>Oil on Canvas 24"x24".</p>
+    </div>  
+
+    <!--  row 5 --> 
+      <div class="mySlides">
+     
+      <img src="images/painting-1.jpg" style="width:100%"><p><h3>Borgund Stave Church Norway</h3>Oil on Canvas 24"x24". Borgund Stave Church 1100s</p></div>
+
+
+    <div class="mySlides">
+ 
+      <img src="images/painting-18.jpg" style="width:100%"><p><h3>Bergen Norway</h3>Oil on Canvas 24"x24".</p>
+    </div>
+
+    <div class="mySlides">
+ 
+      <img src="images/painting-16.jpg" style="width:100%"><p><h3>Wolves, Sweden</h3>Oil on Canvas 24"x24".</p>
+    </div>
+
+     <!--  row 6 -->  
+
+    <div class="mySlides">
+ 
+      <img src="images/painting-5.jpg" style="width:100%"><p><h3>Norway</h3>Oil on Canvas 24"x36".</p>
+    </div>
+
+    <div class="mySlides">
+ 
+      <img src="images/painting-17.jpg" style="width:100%"><p><h3>On the river Jølstra in Førde Norway</h3> Reference: Photograph by Olai Fauske, 1910. Five people in a rowing boat downstream from Hafstad Hotel in Førde.</p>
+    </div>
+
+    <div class="mySlides">
+ 
+      <img src="images/painting-19.jpg" style="width:100%"><p><h3>Northern Norway</h3>Oil on Canvas 24"x30".</p>
+    </div>
+
+
+     <!--  row 7 -->  
+
+
+    <div class="mySlides">
+ 
+      <img src="images/painting-26.jpg" style="width:100%"><p><h3>Figure Study</h3>SFAI, Oil on Masonite 24"x36".</p>
+    </div>
+
+    <div class="mySlides">
+ 
+      <img src="images/painting-27.jpg" style="width:100%"><p><h3>Venice</h3>Oil on Canvas 24"x36".</p>
+    </div>
+
+    <div class="mySlides">
+ 
+      <img src="images/painting-31.jpg" style="width:100%"><p><h3>Italy</h3>Oil on Canvas 24"x30".</p>
+    </div>
+
+     <!--  row 8 -->  
+
+
+    <div class="mySlides">
+ 
+      <img src="images/painting-21.jpg" style="width:100%"><p><h3>Utah</h3>1990s, Oil on Masonite 8"x10".</p>
+    </div>
+
+    <div class="mySlides">
+ 
+      <img src="images/painting-22.jpg" style="width:100%"><p><h3>Los Angeles</h3>Wilshire Blvd., 1990s, Oil on Canvas 24"x24".</p>
+    </div>
+
+    <div class="mySlides">
+ 
+      <img src="images/painting-29.jpg" style="width:100%"><p><h3>San Francisco</h3>Mission District, 1990s, Oil on Masonite 24"x24".</p>
+    </div>
+
+     <!--  row 9 -->  
+
+
+    <div class="mySlides">
+ 
+      <img src="images/painting-32.jpg" style="width:100%"><p><h3>San Francisco</h3>Mission District, 1990s, Oil on Canvas 36"x36".</p>
+    </div>
+
+    <div class="mySlides">
+ 
+      <img src="images/painting-30.jpg" style="width:100"><p><h3>Friuli Landscape</h3>Udine, Italy, 2006, Oil on Masonite 8"x10".</p>
+    </div>
+
+
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+  </div>
+</div>
+                     
+                        
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    
+    
+</script>     
+  <!-- end row -->           
+ 
+
+
+	<hr />									
+											
+
+			
+			</div>   <!-- end inner -->                    
+                        
+					
+</section>		<!-- end section wrapper 5 -->	
+						
+			</div>	<!-- end main -->
+                                    
+
+
+				<!-- Footer -->
+			<footer id="footer">
+						<div class="inner">
+
+
+							<ul class="icons">
+                                <li>	
+								<p>Interested in prints? Get in touch.
+                              <SCRIPT TYPE="text/javascript">
+
+
+emailE=('scottzdon@' + 'scottzdon.com')
+document.write('<A href="mailto:' + emailE + '">' + emailE + '</a>')
+
+</script>
+
+
+<NOSCRIPT>
+    <em>Email address protected by JavaScript.<BR>
+    Please enable JavaScript to contact me.</em>
+</NOSCRIPT>
+ </p>                               </li>
+                                </ul>
+                                <ul class="icons">
+                                
+									<li><a href="http://www.gettyimages.com/photos/scott-zdon?family=creative&license=rf&phrase=scott%20zdon&alloweduse=availableforalluses&excludenudity=true&sort=best#license" target="new" ><span class="label">Getty Images</span></a></li>
+								
+								<li><a href="https://www.instagram.com/scottzdon/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								
+								<li><a href="http://www.flickr.com/photos/46208887@N06/#" class="icon brands alt fa-flickr"><span class="label">Flickr</span></a></li>
+								
+								<li><a href="https://www.linkedin.com/in/scott-zdon-38900469/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+
+							<ul class="copyright">
+								<li>&copy; 2025 Scott Zdon</li><li>Design: Scott Zdon</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

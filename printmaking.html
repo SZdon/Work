@@ -1,0 +1,640 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Scott Zdon Art</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<style type="text/css">
+	
+	.Scrollys
+{
+    max-height: 660px;
+    overflow-y: scroll;
+}	
+
+
+root {
+  --gutter: 5px;
+}
+			
+
+			
+.hs {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns:
+    10px
+    repeat(15, calc(85% - 40px))
+    10px;
+  grid-template-rows: minmax(150px, 1fr);
+}
+.hs:before,
+.hs:after {
+  content: '';
+  width: 10px;
+}
+.image.art img {
+            justify-content: center;
+                 align-items: center;
+				object-fit: contain;
+                  cursor: pointer;
+  transition: 0.3s;
+                max-height: 400px;
+			}
+
+
+						.row {
+            justify-content: center;
+                 align-items: center;
+				object-fit: contain;
+			}
+   
+         
+            
+ #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+    max-height: 100vh;
+  background-color: white;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  max-width: 65vw;
+  max-height: 65vh;
+    align-content: center;
+    font-size: 16px;
+}
+            
+        
+ .mySlides img {
+  max-width: 70%; /* Ensures the image doesn't exceed the width of its parent */
+  height: auto;    /* Maintains the image's aspect ratio */
+ object-fit: contain; 
+     
+    align-content: center;
+}           
+            
+            /* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }  }        
+
+
+/* The Close Button */
+.close {
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: white;
+  padding: 2px 16px;
+  color: black;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+            
+
+	    </style>		
+		
+		
+		
+		
+		
+		
+		
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header class="style7 alt" id="header">
+						<a href="index.html" class="logo"><span>Scott Zdon</span></a>
+						<nav >
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+									<li><a href="index.html">Home</a></li>
+											<li><a href="web.html">Web</a></li>
+											<li><a href="photography.html">Photography</a></li>
+							                <li><a href="print.html">Print</a></li>
+                                            <li><a href="environmental.html">Environmental</a></li>
+											<li><a href="presentation.html">Presentation</a></li>
+                                            <li><a href="branding.html">Branding</a></li>
+                                            <li><a href="animation.html">Social Media</a></li>
+                                            <li><a href="art.html">Art</a></li>
+                                            <li><a href="index.html#bio">Bio</a></li>
+						</ul>
+						<ul class="actions stacked">
+	
+							<li><a href="#cta" class="button fit">Contact Me</a></li>
+						</ul>
+					</nav>
+
+                
+                
+                
+                
+				<!-- Main -->
+					<div id="main" class="alt">
+
+			
+						<!-- One -->
+							<section class="wrapper style5" id="one">
+	
+
+						
+					
+	
+				
+
+	
+  			<div class="inner" id="64hd">
+                
+                								<div class="title">							
+										
+                                                    
+                               <p><h3>Art | Printmaking</h3> <a href="/art.html" class="more scrolly">   Painting   |</a><a href="/mixed-media.html" class="more scrolly">   Mixed Media   |  </a></a><a href="/photography.html" class="more scrolly">   Photography  </a></p>
+                                
+		</div>	
+<div class="row">
+    
+ 
+      <div class="col-10 col-12-small">
+        <div class="box alt"><span class="image fit"><img src="images/printmaking-3.jpg" width="100%" alt=""/></span>
+          <h4>Untitled</h4>
+										<p>8"x10" Monoprint, SFAI 1993</p>						
+
+                                   
+                                           
+		</div>
+	  </div>  
+    </div>  
+	                            <hr />	                        
+
+
+								
+								
+
+			
+			      <header>
+										<h4>Printmaking, Ft Mason Printmaking Studio, San Francisco 1993-1994</h4>
+                                      </header> <p>My printmaking series explores the automatic, intuitive and subconcious art process.</p>
+
+                
+    <div class="row">
+    
+ 
+      <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/printmaking-17.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></span>
+  </div> </div> 
+        
+       
+
+      <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/printmaking-2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"></span>
+  </div>  </div> 
+  
+   
+          <div class="col-4 col-12-small"><div class="box alt">
+              <span class="image art">
+    <img src="images/printmaking-3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"></span>
+  </div> </div> 
+
+    <!--  row 2 -->  
+         <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/printmaking-4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"></span>
+  </div> </div> 
+        
+       
+
+      <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/printmaking-5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor"></span>
+  </div>  </div> 
+  
+   
+          <div class="col-4 col-12-small"><div class="box alt">
+              <span class="image art">
+    <img src="images/printmaking-6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor"></span>
+  </div> </div>  
+    
+  <!--  row 3 -->    
+      <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/printmaking-7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor"></span>
+  </div> </div> 
+        
+       
+
+      <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/printmaking-8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor"></span>
+  </div>  </div> 
+  
+   
+          <div class="col-4 col-12-small"><div class="box alt">
+              <span class="image art">
+    <img src="images/printmaking-9.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor"></span>
+  </div> </div> 
+    
+    <!--  row 4 -->  
+          <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/printmaking-10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor"></span>
+  </div> </div> 
+        
+
+      <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/printmaking-11.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor"></span>
+  </div>  </div> 
+  
+   
+          <div class="col-4 col-12-small"><div class="box alt">
+              <span class="image art">
+    <img src="images/printmaking-12.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor"></span>
+  </div> </div> 
+    
+     <!--  row 5 -->  
+          <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/printmaking-1.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor"></span>
+  </div> </div> 
+        
+       
+
+      <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/printmaking-14.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor"></span>
+  </div>  </div> 
+    
+      <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/printmaking-16.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor"></span>
+  </div>  </div> 
+        
+        
+     <!--  row 6 -->  
+          <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/printmaking-15.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor"></span>
+  </div> </div> 
+        
+      <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/printmaking-18.jpg" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor"></span>
+  </div>  </div> 
+    
+      <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/printmaking-20.jpg" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor"></span>
+  </div>  </div>         
+        
+     
+    
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+      
+
+    <div class="mySlides">
+     
+      <img src="images/printmaking-17.jpg" style="width:100%"><p><h3>Untitled</h3>Monoprint 8"x10", Arches paper. Ft Mason Printmaking Studio, 1993-1994</p></div>
+
+
+    <div class="mySlides">
+ 
+      <img src="images/printmaking-2.jpg" style="width:100%"><p><h3>Untitled</h3>Monoprint 8"x10", Arches paper. Ft Mason Printmaking Studio, 1993-1994</p></div>
+
+
+    <div class="mySlides">
+   
+      <img src="images/printmaking-3.jpg" style="width:100%"><p><h3>Untitled</h3>Monoprint 8"x10", Arches paper. Ft Mason Printmaking Studio, 1993-1994</p></div>
+   
+    
+   <!--  row 2 -->  
+                
+      <div class="mySlides">
+     
+      <img src="images/printmaking-4.jpg" style="width:100%"><p><h3>Untitled</h3>Monoprint 8"x10", Arches paper. Ft Mason Printmaking Studio, 1993-1994</p></div>
+
+
+    <div class="mySlides">
+ 
+      <img src="images/printmaking-5.jpg" style="width:100%"><p><h3>Untitled</h3>Monoprint 8"x10", Arches paper. Ft Mason Printmaking Studio, 1993-1994</p></div>
+
+
+    <div class="mySlides">
+   
+      <img src="images/printmaking-6.jpg" style="width:100%"><p><h3>Untitled</h3>Monoprint 8"x10", Arches paper. Ft Mason Printmaking Studio, 1993-1994</p></div>
+      
+                
+   <!--  row 3 -->                
+                
+        <div class="mySlides">
+     
+      <img src="images/printmaking-7.jpg" style="width:100%"><p><h3>Untitled</h3>Monoprint 8"x10", Arches paper. Ft Mason Printmaking Studio, 1993-1994</p></div>
+
+
+    <div class="mySlides">
+ 
+      <img src="images/printmaking-8.jpg" style="width:90%"><p><h3>Untitled</h3>Monoprint 8"x10", Arches paper. Ft Mason Printmaking Studio, 1993-1994</p></div>
+  
+
+    <div class="mySlides">
+   
+      <img src="images/printmaking-9.jpg" style="width:100%"><p><h3>Untitled</h3>Monoprint 8"x10", Arches paper. Ft Mason Printmaking Studio, 1993-1994</p></div>
+          
+                
+   <!--  row 4 -->                
+                
+        <div class="mySlides">
+     
+      <img src="images/printmaking-10.jpg" style="width:100%"><p><h3>Untitled</h3>Monoprint 8"x10", Arches paper. Ft Mason Printmaking Studio, 1993-1994</p></div>
+
+
+    <div class="mySlides">
+ 
+      <img src="images/printmaking-11.jpg" style="width:100%"><p><h3>Untitled</h3>Monoprint 8"x10", Arches paper. Ft Mason Printmaking Studio, 1993-1994</p></div>
+
+
+    <div class="mySlides">
+   
+      <img src="images/printmaking-12.jpg" style="width:100%"><p><h3>Untitled</h3>Monoprint 8"x10", Arches paper. Ft Mason Printmaking Studio, 1993-1994</p></div>
+ 
+
+    <!--  row 5 --> 
+        <div class="mySlides">
+     
+      <img src="images/printmaking-1.jpg" style="width:100%"><p><h3>Untitled</h3>Monoprint 8"x10", Arches paper. Ft Mason Printmaking Studio, 1993-1994</p></div>
+
+    <div class="mySlides">
+ 
+      <img src="images/printmaking-14.jpg" style="width:100%"><p><h3>Untitled</h3>Monoprint 8"x10", Arches paper. Ft Mason Printmaking Studio, 1993-1994</p></div>
+   
+
+    <div class="mySlides">
+ 
+      <img src="images/printmaking-16.jpg" style="width:100%"><p><h3>Untitled</h3>Monoprint 8"x10", Arches paper. Ft Mason Printmaking Studio, 1993-1994</p></div>
+   
+    <!--  row 6 --> 
+        <div class="mySlides">
+     
+      <img src="images/printmaking-15.jpg" style="width:100%"><p><h3>Untitled</h3>Monoprint 8"x10", Arches paper. Ft Mason Printmaking Studio, 1993-1994</p></div>
+
+    <div class="mySlides">
+ 
+      <img src="images/printmaking-18.jpg" style="width:100%"><p><h3>Untitled</h3>Intaglio 8"x10", Arches paper. Ft Mason Printmaking Studio, 1993-1994</p></div>
+   
+
+    <div class="mySlides">
+ 
+      <img src="images/printmaking-20.jpg" style="width:100%"><p><h3>Untitled</h3>Monoprint 8"x10", Arches paper. Ft Mason Printmaking Studio, 1993-1994</p></div>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+  </div>
+</div>
+                     
+                        
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>      
+  <!-- end row -->              
+                
+                
+                
+                              
+                                
+                                
+                                
+			
+			
+			</div>   <!-- end inner -->                    
+                        
+					
+</section>		<!-- end section wrapper 5 -->	
+						
+			</div>	<!-- end main -->
+                                    
+
+
+				<!-- Footer -->
+			<footer id="footer">
+						<div class="inner">
+
+
+							<ul class="icons">
+                                <li>	
+								<p>Interested in prints? Get in touch.
+                              <SCRIPT TYPE="text/javascript">
+
+
+emailE=('scottzdon@' + 'scottzdon.com')
+document.write('<A href="mailto:' + emailE + '">' + emailE + '</a>')
+
+</script>
+
+
+<NOSCRIPT>
+    <em>Email address protected by JavaScript.<BR>
+    Please enable JavaScript to contact me.</em>
+</NOSCRIPT>
+ </p>                               </li>
+                                </ul>
+                                <ul class="icons">
+                                
+									<li><a href="http://www.gettyimages.com/photos/scott-zdon?family=creative&license=rf&phrase=scott%20zdon&alloweduse=availableforalluses&excludenudity=true&sort=best#license" target="new" ><span class="label">Getty Images</span></a></li>
+								
+								<li><a href="https://www.instagram.com/scottzdon/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								
+								<li><a href="http://www.flickr.com/photos/46208887@N06/#" class="icon brands alt fa-flickr"><span class="label">Flickr</span></a></li>
+								
+								<li><a href="https://www.linkedin.com/in/scott-zdon-38900469/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+
+							<ul class="copyright">
+								<li>&copy; 2025 Scott Zdon</li><li>Design: Scott Zdon</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

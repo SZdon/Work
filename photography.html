@@ -1,0 +1,557 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Scott Zdon Design + Photography</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<style type="text/css">
+	
+	.Scrollys
+{
+    max-height: 660px;
+    overflow-y: scroll;
+}	
+
+
+root {
+  --gutter: 5px;
+}
+			
+								
+.app {
+  padding: var(--gutter) 0;
+  display: grid;
+  grid-gap: var(--gutter) 0;
+  grid-template-columns: var(--gutter) 1fr var(--gutter);
+  align-content: start;
+}
+
+.app > * {
+  grid-column: 2 / -2;
+}
+
+.app > .full {
+  grid-column: 1 / -1;
+}
+
+
+.app {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  overflow-y: scroll;
+}
+			
+.hs {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns:
+    10px
+    repeat(15, calc(85% - 40px))
+    10px;
+  grid-template-rows: minmax(150px, 1fr);
+}
+.hs:before,
+.hs:after {
+  content: '';
+  width: 10px;
+}
+
+/* Demo styles */
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+.app {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  overflow-y: scroll;
+}
+
+.hs > li,
+.item {
+  scroll-snap-align: center;
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: top;
+  background: #fff;
+}		
+		
+		
+.crop-height {
+  /* max-width: 1200px; /* img src width (if known) */
+  max-height: 660px;
+  overflow: scroll; 
+}		
+		
+
+		
+		
+.sized {
+ object-fit: cover;
+  width: 100%;
+  height: 100%;
+}		
+		
+		
+		
+		
+		
+		
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2, .mySlides3 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    top: auto !important;
+    bottom: 0 !important;
+    z-index: 10 !important;
+    opacity: 0.5 !important;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}		
+		
+.title {
+    padding-top: 3em;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0em;
+    margin: 0 auto;
+    max-width: 65em;
+    width: calc(100% - 6em);
+}
+			
+	    </style>
+		
+		
+		
+		
+		
+		
+		
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header class="style7 alt" id="header">
+						<a href="index.html" class="logo"><span>Scott Zdon</span></a>
+						<nav >
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+									<li><a href="index.html">Home</a></li>
+											<li><a href="web.html">Web</a></li>
+											<li><a href="photography.html">Photography</a></li>
+							                <li><a href="print.html">Print</a></li>
+                                            <li><a href="environmental.html">Environmental</a></li>
+											<li><a href="presentation.html">Presentation</a></li>
+                                            <li><a href="branding.html">Branding</a></li>
+                                            <li><a href="animation.html">Social Media</a></li>
+                                            <li><a href="art.html">Art</a></li>
+                                            <li><a href="index.html#bio">Bio</a></li>
+						</ul>
+						<ul class="actions stacked">
+	
+							<li><a href="#cta" class="button fit">Contact Me</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+			
+						<!-- One -->
+							<section class="wrapper style5" id="one">
+	
+								
+								
+								<div class="title">							
+										<h3>Photography</h3><hr />
+
+		</div>	
+		
+								<!-- Books -->
+	
+								<div class="inner">
+	<div class="box alt">
+									<div class="row">
+											<div class="col-6 col-12-small">
+									<header class="major">
+										<h3>San Francisco 90s</h3>
+									</header>
+									<!--<h3>clean, modern design</h3> -->
+									<p>30 years in the making. <br>
+										Get my new San Francisco 90s book.</p>
+																	<iframe id="data-blurb-bookshare-10610533" data-bindattr-72="72" 
+		height="100%" data-bindattr-73="73"
+		width="100%" data-bindattr-74="74"
+		src="https://www.blurb.com/bookshare/app/index.html?bookId=10610533" data-bindattr-75="75"
+		frameborder=0
+		allowfullscreen=''
+		onload='this.focus()'
+		scrolling='no'>
+		</iframe>	
+
+												</div>
+									  <div class="col-6 col-12-small">
+									<header class="major">
+										<h3>Paris & Versailles</h3>
+									</header>
+									<!--<h3>clean, modern design</h3> -->
+									<p>Just out! Paris and Versailles. Walking Paris and Versailles <br>
+										with two vintage film cameras and a digital camera.</p>
+									<iframe id="data-blurb-bookshare-10711880" data-bindattr-121="121"
+		height="100%" data-bindattr-122="122"
+		width="100%" data-bindattr-123="123"
+		src="https://www.blurb.com/bookshare/app/index.html?bookId=10711880" data-bindattr-124="124"
+		frameborder=0
+		allowfullscreen=''
+		onload='this.focus()'
+		scrolling='no'> </iframe>
+									  </div>						
+								</div>
+		</div><br><br>
+								</div>
+								
+								
+								
+								
+								
+								
+		<!-- Item -->
+	                            <div class="inner" id="40">
+<div class="box alt">					
+<span class="image fit">
+
+												
+											
+											
+  <div class="app">
+
+  <ul class="hs">
+    <li class="item"><img src="images/sf-h4.jpg" alt="" /></li>
+    <li class="item"><img src="images/sf-h3.jpg" alt="" /></li>
+    <li class="item"><img src="images/sf-h2.jpg" alt="" /></li>
+    <li class="item"><img src="images/sf-h1.jpg" alt="" /></li>
+    <li class="item"><img src="images/sf-h5.jpg" alt="" /></li>
+  </ul>
+
+  </div>	  
+<br>				
+				
+											
+</span>
+      <header>
+										<h4>San Francisco 90s</h4>
+										<p>SFAI darkroom</p>
+
+									</header> 
+      
+									</div>
+
+	
+							</div>
+                            <hr />	
+					
+							
+			<!-- Item -->
+	                            <div class="inner" id="40">
+<div class="box alt">					
+<span class="image fit">
+
+												
+											
+											
+  <div class="app">
+
+  <ul class="hs">
+    <li class="item"><img src="images/photo1-h.jpg" alt="" /></li>
+    <li class="item"><img src="images/photo3-h.jpg" alt="" /></li>
+    <li class="item"><img src="images/photo2-h.jpg" alt="" /></li>
+    <li class="item"><img src="images/photo4-h.jpg" alt="" /></li>
+    <li class="item"><img src="images/photo5-h.jpg" alt="" /></li>
+    <li class="item"><img src="images/pic03.jpg" alt="" /></li>	 
+  </ul>
+
+  </div>	  
+<br>				
+				
+											
+</span>
+      <header>
+										<h4>Painter Jessica Palermo</h4>
+										<p>Phoenix, AZ</p>
+
+									</header> 
+      
+									</div>
+
+	
+							</div>
+                            <hr />	
+
+								
+			<!-- Item -->
+	                            <div class="inner" id="40">
+<div class="box alt">					
+<span class="image fit">
+
+												
+											
+											
+  <div class="app">
+
+  <ul class="hs">
+    <li class="item"><img src="images/photo11s.jpg" alt="" /></li>
+    <li class="item"><img src="images/photo14s.jpg" alt="" /></li>
+    <li class="item"><img src="images/photo15s.jpg" alt="" /></li>
+    <li class="item"><img src="images/photo19s.jpg" alt="" /></li>
+    <li class="item"><img src="images/photo32s.jpg" alt="" /></li>
+    <li class="item"><img src="images/101s.jpg" alt="" /></li>
+    <li class="item"><img src="images/105s.jpg" alt="" /></li>
+    <li class="item"><img src="images/106s.jpg" alt="" /></li>
+    <li class="item"><img src="images/108s.jpg" alt="" /></li>
+    <li class="item"><img src="images/111s.jpg" alt="" /></li>	 
+    <li class="item"><img src="images/photo34s.jpg" alt="" /></li>
+    <li class="item"><img src="images/photo38s.jpg" alt="" /></li>
+	<li class="item"><img src="images/photo10s.jpg" alt="" /></li>
+    <li class="item"><img src="images/photo10n.jpg" alt="" /></li>
+	      <li class="item"><img src="images/mv-s.jpg" alt="" /></li>
+	  	      <li class="item"><img src="images/37720003-s.jpg" alt="" /></li>
+  </ul>
+
+  </div>	  
+<br>				
+				
+											
+</span>
+      <header>
+										<h4>Getty Images</h4>
+										<p>All shot on film</p>
+
+									</header> 
+      
+									</div>
+
+	
+							</div>
+                            <hr />	
+								
+			<!-- Item -->
+	                            <div class="inner" id="40">
+<div class="box alt">					
+<span class="image fit">
+
+												
+											
+											
+  <div class="app">
+
+  <ul class="hs">
+    <li class="item"><img src="images/photo29n.jpg" alt="" /></li>
+    <li class="item"><img src="images/photo30n.jpg" alt="" /></li>
+    <li class="item"><img src="images/11n.jpg" alt="" /></li>
+    <li class="item"><img src="images/photo13n.jpg" alt="" /></li>
+    <li class="item"><img src="images/photo22n.jpg" alt="" /></li>	  
+    <li class="item"><img src="images/104n.jpg" alt="" /></li>
+	      <li class="item"><img src="images/112n.jpg" alt="" /></li>
+	      <li class="item"><img src="images/109n.jpg" alt="" /></li>
+	      <li class="item"><img src="images/107n.jpg" alt="" /></li>
+	  	  <li class="item"><img src="images/113n.jpg" alt="" /></li>
+	  <li class="item"><img src="images/photo21n.jpg" alt="" /></li>
+	      <li class="item"><img src="images/114n.jpg" alt="" /></li>
+	      <li class="item"><img src="images/110n.jpg" alt="" /></li>
+  </ul>
+
+  </div>	  
+<br>				
+				
+											
+</span>
+									</div>
+
+	
+							</div>
+                            <hr />
+		
+								
+			<!-- Item -->
+			<div class="inner" id="412">
+				
+	      <header>
+										<h4>Video</h4>
+										<p>Page Wrap and Banners: creative direction and design</p>							
+                                      </header> 			
+
+<div class="box alt">
+
+											
+                    <span class="image fit">
+               <div id="videoContent"align="center" >
+
+					     <video width="100%" controls loop align="center">
+  						<source src="images/veronica-work.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+						</video>
+
+                        </div>   
+				<p></p>
+			               <div id="videoContent"align="center" >
+
+					     <video width="100%" controls loop align="center">
+  						<source src="images/_DSC7794_1.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+						</video>
+
+                        </div>   		
+				<p></p>
+			               <div id="videoContent"align="center" >
+
+					     <video width="100%" controls loop align="center">
+  						<source src="images/_DSC7794_2.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+						</video>
+
+                        </div>   					
+		
+
+</span>
+                             
+                                           
+
+			
+									</div>
+
+							</div>						
+								
+				<hr />						
+								
+			
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+			<footer id="footer">
+						<div class="inner">
+
+
+							<ul class="icons">
+                                <li>	
+								<p>Interested in prints? Get in touch.
+                              <SCRIPT TYPE="text/javascript">
+
+
+emailE=('scottzdon@' + 'scottzdon.com')
+document.write('<A href="mailto:' + emailE + '">' + emailE + '</a>')
+
+</script>
+
+
+<NOSCRIPT>
+    <em>Email address protected by JavaScript.<BR>
+    Please enable JavaScript to contact me.</em>
+</NOSCRIPT>
+ </p>                               </li>
+                                </ul>
+                                <ul class="icons">
+                                
+									<li><a href="http://www.gettyimages.com/photos/scott-zdon?family=creative&license=rf&phrase=scott%20zdon&alloweduse=availableforalluses&excludenudity=true&sort=best#license" target="new" ><span class="label">Getty Images</span></a></li>
+								
+								<li><a href="https://www.instagram.com/scottzdon/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								
+								<li><a href="http://www.flickr.com/photos/46208887@N06/#" class="icon brands alt fa-flickr"><span class="label">Flickr</span></a></li>
+								
+								<li><a href="https://www.linkedin.com/in/scott-zdon-38900469/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+
+							<ul class="copyright">
+								<li>&copy; 2025 Scott Zdon</li><li>Design: Scott Zdon</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
