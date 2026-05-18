@@ -184,6 +184,137 @@ img {vertical-align: middle;}
     max-width: 65em;
     width: calc(100% - 6em);
 }
+            /* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+    max-height: 100vh;
+  background-color: white;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  max-width: 65vw;
+  max-height: 65vh;
+    align-content: center;
+    font-size: 16px;
+}
+            
+        
+ .mySlides img {
+  max-width: 70%; /* Ensures the image doesn't exceed the width of its parent */
+  height: auto;    /* Maintains the image's aspect ratio */
+ object-fit: contain; 
+     
+    align-content: center;
+}           
+            
+            /* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }  }        
+
+
+/* The Close Button */
+.close {
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: white;
+  padding: 2px 16px;
+  color: black;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+   .my-div {
+        width: 100vw;
+    }
+
 			
 	    </style>	
 		
@@ -256,17 +387,13 @@ img {vertical-align: middle;}
 		
                 
  <!-- Item -->
-	<div class="col-4 col-12-small">							
-<div class="box alt">				
-                    <span class="image fit"><a href="/vinfast.html"><img src="images/vinfast-small.jpg"  alt="" /></a>
-</span>
-    </div>                            
-    <header>
-														<h4>VinFast</h4>
-													</header>
-												<!----	<p>Creative direction, UI/UX design.<br>   --->
-                                         <a href="/vinfast.html">View</a>  </p>                            
-  </div>		
+  <div class="col-4 col-12-small"><div class="box alt">
+          <span class="image art">
+    <img src="images/painting-15.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></span>
+  </div> 
+    <header>													<h4>VinFast</h4>
+												</header>
+</div> 	
     
 <!-- Item -->
 	<div class="col-4 col-12-small">							
@@ -552,7 +679,65 @@ img {vertical-align: middle;}
                                          <a href="/games-app.html">View</a>  </p>                            
   </div>	
 																			
-	
+	<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+      
+
+    <div class="mySlides">
+    
+      <img src="images/painting-15.jpg" style="width:100%"><p><h3>Woman in a Setesdal costume at the stairs of a shop. Evje, Aust-Agder Fylke, Norway</h3> Oil on Canvas 36"x36". Reference: photograph by Elisabeth Meyer, 1940-1942.</p></div>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+  </div> 
+</div>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    
+    
+</script>    
+
+
+
 				
 	</div> 	 <!-- end row -->		
 	
