@@ -24,11 +24,9 @@
     line-height: 1.65;
 	}  
  		.box.alt2 {
-			border: 0;
-			border-radius: 0;
-			padding: 0;
-            height: 400px;
-            display: flex; /* align-items: stretch; is active by default, forcing equal heights */ 
+display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  grid-auto-rows: 1fr; /* Forces all rows to match the tallest item's height */
 		}
    
      
