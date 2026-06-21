@@ -16,10 +16,7 @@
 <META NAME="country" CONTENT="USA">	
  <style type="text/css">
   
- .three{
-  flex-wrap: wrap; /* Allows boxes to break into new rows */
-  gap: 16px;
-	}     
+     
 .two{
     border: 1px solid rgba(155, 241, 255);
     font-size: 14pt;
@@ -28,14 +25,10 @@
     line-height: 1.65;
     height: fit-content;
     display: flex;
-flex: 1 1 calc(33.33% - 16px); /* (100% / 3) minus gap */
+  flex-wrap: wrap; /* Allows boxes to break into new rows */
+  gap: 16px;
 	}  
-/* 3. The Viewport Break */
-@media (max-width: 768px) {
-  .box {
-    flex: 1 1 100%; /* Boxes take up full width and break into separate rows */
-  }
-}   
+   
      
       </style>	
     
@@ -214,7 +207,7 @@ flex: 1 1 calc(33.33% - 16px); /* (100% / 3) minus gap */
 									
 									<!-- Content -->
 
-						  <div class="box alt three">
+						  <div class="box alt">
                               
         
 	
