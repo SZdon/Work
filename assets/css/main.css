@@ -2111,16 +2111,8 @@ input, select, textarea {
 			border: 0;
 			border-radius: 0;
 			padding: 0;
-            display: flex; /* align-items: stretch; is active by default, forcing equal heights */ 
 		}
 
-		.box.alt2 {
-			border: 0;
-			border-radius: 0;
-			padding: 0;
-            height: 300px;
-            display: flex; /* align-items: stretch; is active by default, forcing equal heights */ 
-		}
 
 /* Icon */
 
