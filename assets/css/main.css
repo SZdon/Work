@@ -1725,10 +1725,13 @@ input, select, textarea {
 					.row.gtr-50.gtr-uniform {
 						margin-top: -0.625em;
                         display: flex;
+                        align-items: stretch;
 					}
 
 						.row.gtr-50.gtr-uniform > * {
 							padding-top: 0.625em;
+                            display: flex;
+                        align-items: stretch;
 						}
 
 				.row {
