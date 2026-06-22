@@ -16,13 +16,7 @@
 <META NAME="country" CONTENT="USA">	
  <style type="text/css">
   
- 				.newrow {
-						margin-top: -0.625em;
-                          display: grid;
-  /* Forces 3 equal columns that collapse properly without breaking width */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-  gap: 16px; /* Space between boxes */
-					}    
+
 .two{
     border: 1px solid rgba(155, 241, 255);
     font-size: 14pt;
@@ -31,17 +25,22 @@
     line-height: 1.65;
 	}  
      
-/* 3. The Viewport Break */
-   @media (max-width: 768px) {
-   .newrow {
+ .newrow {
 	margin-top: -0.625em;
     display: grid;
-    grid-template-columns: 1fr;
+    /* Forces 3 equal columns that collapse properly without breaking width */
+    grid-template-columns: 1fr; 
     gap: 16px; /* Space between boxes */
-					}     
+					}        
+/* 3. The Viewport Break */
+     @media (min-width: 768px) {
+  .newrow  {
+    grid-template-columns: repeat(3, 1fr); 
+      gap: 16px; /* Space between boxes */
+  }
 }
-    
      
+    
       </style>	
     
     
