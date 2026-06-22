@@ -18,8 +18,10 @@
   
  				.newrow {
 						margin-top: -0.625em;
-                        display: flex;
-                        align-items: stretch;
+                          display: grid;
+  /* Forces 3 equal columns that collapse properly without breaking width */
+  grid-template-columns: repeat(3, minmax(0, 1fr)); 
+  gap: 16px; /* Space between boxes */
 					}    
 .two{
     border: 1px solid rgba(155, 241, 255);
