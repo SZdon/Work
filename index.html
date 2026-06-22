@@ -31,12 +31,16 @@
     /* Forces 3 equal columns that collapse properly without breaking width */
     grid-template-columns: 1fr; 
     gap: 16px; /* Space between boxes */
+       /* 2. Force all rows to be equal height */
+  grid-auto-rows: 1fr; 
 					}        
 /* 3. The Viewport Break */
-     @media (min-width: 768px) {
+     @media (min-width: 1200px) {
   .newrow  {
     grid-template-columns: repeat(3, 1fr); 
       gap: 16px; /* Space between boxes */
+        /* 2. Force all rows to be equal height */
+  grid-auto-rows: 1fr; 
   }
 }
      
