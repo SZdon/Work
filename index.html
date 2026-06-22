@@ -34,7 +34,10 @@
     /* Forces 3 equal columns that collapse properly without breaking width */
     grid-template-columns: 1fr; 
     gap: 16px; /* Space between boxes */
-					}        
+       /* MAGIC LINE: Forces all rows to distribute space equally */
+  grid-auto-rows: 1fr; 
+					}     
+     
 /* 3. The Viewport Break */
      @media (min-width: 1200px) {
   .newrow  {
